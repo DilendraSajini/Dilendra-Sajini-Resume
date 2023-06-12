@@ -2,6 +2,7 @@
 
 <head>
     <link href="style.css" rel="stylesheet">
+    <link href="sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Your Name resume</title>
 </head>
@@ -11,11 +12,25 @@
         <!-- resume header with your name and title -->
         <h1>DILENDRA SAJINI</h1>
         <hr>
+        <h2 id="position">
         SOFTWARE ENGINEER (DATA CENTRIC)
+        </h2>
         <hr>
     </header>
     <main>
-        <article id="mainLeft">
+        <article id="mainSide">
+            <section id="navBar">
+                <div class="sidenav">
+                    <img id="photo" src="photo.jpg" alt="Girl">
+                    <a href="#section_workexperience">WORK EXPERIENCE</a>
+                    <a href="#section_education">EDUCATION</a>
+                    <a href="#section_skills">SKILLS</a>
+                    <a href="#section_languages">LANGUAGES</a>
+                    <a href="#section_about">ABOUT</a>
+                  </div>
+            </section>
+        </article>
+        <article id="mainLeft">   
             <section>
                 <h2>CONTACT</h2>
                 <p>
@@ -31,7 +46,7 @@
                     <a href="https://www.linkedin.com/in/dilendra-sajini/">dilendra-sajini</a>
                 </p>
             </section>
-            <section>
+            <section id="section_workexperience">
                 <h2>WORK EXPERIENCE</h2>
                 <h3>SENIOR SOFTWARE ENGINEER</h3>
                 <p>
@@ -134,9 +149,7 @@
                     </li>
                 </ul>
             </section>
-        </article>
-        <article id="mainRight">
-            <section>
+            <section id="section_education">
                 <h2>EDUCATION</h2>
                 <h3>MASTERS OF SCIENCE, SPECIALISING IN DATA SCIENCE, – ACCREDITED BY BCS </h3>
                 <p>
@@ -197,7 +210,7 @@
                 <p>
                 </p>
             </section>
-            <section>
+            <section id="section_skills">
                 <h2>SKILLS</h2>
                 <ul>
                     <li> Java/Spring, Spring Boot, Java Swing (6 years)
@@ -241,11 +254,11 @@
                     </li>
                     <li>Rapid Miner
             </section>
-            <section>
+            <section id="section_languages">
                 <h2>LANGUAGES</h2>
                 <h3>English : IELTS CEFR Level B2 </h3>
             </section>
-            <section>
+            <section id="section_about">
                 <h2>ABOUT</h2>
                 <!-- about you -->
             </section>
