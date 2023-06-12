@@ -60,5 +60,5 @@ h1, h2, h3 {
 }
 
 #mainRight {
-    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
 }
