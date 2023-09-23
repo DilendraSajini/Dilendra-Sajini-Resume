@@ -5,11 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link href="style.css" rel="stylesheet"/>
     <link href="sidebar.css" rel="stylesheet">
+    <link href="card.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -43,8 +45,8 @@
                     <a href="#section_education">EDUCATION</a>
                     <a href="#section_skills">SKILLS</a>
                     <a href="#section_languages">LANGUAGES</a>
-                    <a href="SERVICE LETTERS.pdf" target="_blank">SERVICE LETTERS</a>
-                    <a href="DILENDRA WIJESINGHE.pdf" download="DILENDRA WIJESINGHE.pdf">
+                    <a href="docs/assets/SERVICE LETTERS.pdf" target="_blank">SERVICE LETTERS</a>
+                    <a href="docs/assets/DILENDRA WIJESINGHE.pdf" download="DILENDRA WIJESINGHE.pdf">
                     <button class="btn">Download Resume</button>
                     </a>
                 </div>
@@ -64,24 +66,20 @@
                 </p>
             </section>
             <section id="section_contacts">
-                <h2>CONTACT</h2>
                 <div id="contact_details">
                     <p id="email">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
                         <a href="mailto:dilendra.sajini@gmail.com">
-                            <div id="highlighted">dilendra.sajini@gmail.com</div>
+                            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
                         </a>
                     </p>
                     <p id="github">
-                        <i class="fab fa-github" aria-hidden="true"></i>
                         <a href="https://github.dev/DilendraSajini">
-                            <div id="highlighted">DilendraSajini</div>
+                          <i class="fab fa-github fa-3x" aria-hidden="true"></i>
                         </a>
                     </p>
                     <p id="linkedln">
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
                         <a href="https://www.linkedin.com/in/dilendra-sajini/">
-                            <div id="highlighted">dilendra-sajini</div>
+                            <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
                         </a>
                     </p>
                 </div>
@@ -89,28 +87,38 @@
             <br>
             <section>
                 <h2>EXPERTIES</h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
+                <div class="container panel_background">
+                    <div class="row panel_background">
+                        <div class="col-sm-4 card_column">
                             <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body rounded card_background">
+                                    <h5 class="card-title" id="experties_header"> <b> Back End Development </b></h5>
+                                    <p class="card-text" id="experties_body">With 6 years of experience in <b>Java back-end development</b>, specializing in the <b>Spring framework</b> and <b>Java 8</b>, I have actively contributed to healthcare information systems, cloud-based learning platforms, and telecommunications projects. My expertise extends to <b>microservices architecture</b>, where I successfully restructured legacy backends into microservices, emphasizing <b>REST APIs</b> and message-driven architecture to enhance scalability and maintainability. My commitment to quality is evident in achieving an impressive 80% unit and integration test coverage with tools like <b>JUnit</b>, non-functional performance testing , memory <b>(Jprofiler)</b> and database profiling <b> (SQLProfiler) </b>. I adhere to clean code best practices, emphasizing backward compatibility and maximizing object-oriented design patterns for code reusability. My diverse technology stack includes <b>EJB 2 development</b>, <b>Spring</b>, <b>Spring Boot</b>, <b>Swagger with OpenAPI</b>, relational and document databases (<b>SQL, MongoDB, CouchDB</b>), <b>Hibernate</b>, <b>Apache Maven</b>, and <b>Gradle build tools</b>. I bring Agile best practices to the table, embracing <b>CI/CD</b> for efficient development cycles. Additionally, I have two years of experience in IoT-focused transportation truck-connecting app development, utilizing technologies such as <b>PubNub</b>, <b>MQTT messaging</b>, and <b>AWS EC2 instance deployment</b>. I've also strengthened security and user-friendliness by integrating <b>Mobile Connect</b> into core ASE products, implementing <b>OAuth2</b> and <b>JWT tokens</b>. Furthermore, my role included finalizing upfront requirements and technical specifications for <b>OpenStack Gateway</b>, acting as middleware to translate between OpenStack cloud operating system APIs and native <b>Infrastructure-as-a-Service</b>. My diverse skill set and extensive experience make me a valuable asset for any software development team.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4 card_column">
                             <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body rounded card_background">
+                                    <h5 class="card-title" id="experties_header"> <b> Front End Development </b> </h5>
+                                    <p class="card-text" id="experties_body">With three years of expertise in front-end development including SPA using <b>Angular</b> with <b>NgRx</b> and <b>React</b> with <b>Redux</b> frameworks, I bring extensive experience from various domains, including healthcare information systems, cloud-based learning platforms, and transportation systems. My skill set extends to <b>MEAN stack</b> (Mongo DB, Express.js, Angular, Node.js) development and the successful deployment of applications on <b>AWS EC2</b> instances. I specialize in real-time data communication, utilizing various messaging protocols like <b>PUBNUB</b> and <b>MQTT</b> with the <b>Mosquito</b> broker.
+                                        Notably, I've developed two Android applications that facilitate seamless interaction between truck drivers and customers within this ecosystem. My approach to SPA development revolves around creating modular and responsive UI components while ensuring efficient application state management through <b>NgRx</b> and <b>Redux</b>. I excel in managing asynchronous data fetching, handling events, and effectively managing side effects, all while prioritizing performance optimization techniques such as pagination and lazy loading.
+                                        My commitment to code quality shines through my emphasis on reusable component design, reducing code duplication, and ensuring long-term maintainability. I consider unit testing and efficient dependency management as fundamental components of my development process. I possess a well-rounded skill set and a proven track record of delivering SPAs that meet stringent performance and usability standards.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-4 card_column">
+                            <div class="card">
+                                <div class="card-body rounded card_background">
+                                    <h5 class="card-title" id="experties_header"> <b> Machine Learning and Data Visualization </b> </h5>
+                                    <p class="card-text" id="experties_body">With a strong focus on <b>Machine Learning</b> and <b>Data Visualization</b>, I have a proven track record of significantly improving the accuracy and efficiency of breast cancer classification in high-resolution histology images. My approach involves utilizing patch-based image analysis, incorporating <b>VGG16</b> transfer learning, and implementing an <b>LSTM</b> sequential data processing model while meticulously preserving the global context for critical structures and features. I excel in utilizing <b>Python</b> to implement advanced machine learning algorithms and techniques, and I have a talent for creating interactive data applications using <b>Streamlit</b>. Additionally, I conduct my research and development in <b>Google Colab</b>, showcasing my proficiency in this versatile platform. My commitment to staying at the forefront of technology and employing innovative methodologies to address complex challenges in the field of machine learning sets me apart as a forward-thinking and impactful professional in this domain.
+                                        In the realm of <b>Data Visualization</b>, I have engineered an OLAP system tailored for university student progress tracking, featuring intuitive dashboards and Excel pivot charts. This system empowers stakeholders with the ability to perform visual data analysis, enabling informed decision-making. Furthermore, I have developed an <b>Oracle Apex</b> application designed to manage patient data, staff scheduling, and finances. This comprehensive solution not only ensures data integrity, security, and validations but also provides robust data visualization capabilities. My multifaceted expertise in both <b>Machine Learning</b> and <b>Data Visualization</b> reflects my dedication to leveraging advanced technologies and data-driven insights to address complex challenges effectively.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                 </div>
 
@@ -121,30 +129,27 @@
                         <br>
                         <br>
                         <h2><i class="fa fa-briefcase" aria-hidden="true"></i> WORK EXPERIENCE</h2>
-                        <h3>SENIOR SOFTWARE ENGINEER</h3>
+                        <h3>Associate Technical Lead</h3>
                         <p id="parent">
                             Cambio Software Engineering, Colombo, Sri Lanka.
                             <span id="highlighted_date">October 2019 to September 2022 </span>
                             <iframe id="pdfViewer" style="display: none;"></iframe>
                         </p>
                         <br>
-                        <br>
-                        <h3>SENIOR SOFTWARE ENGINEER</h3>
+                        <h3>Senior Software Engineer</h3>
                         <p id="parent">
                             Pearson Lanka (Pvt) Ltd., Colombo, Sri Lanka.
                             <span id="highlighted_date">January 2019 to October 2019</span>
                         </p>
                         </ul>
                         <br>
-                        <br>
-                        <h3>SENIOR SOFTWARE ENGINEER</h3>
+                        <h3>Associate Technical Lead</h3>
                         <p id="parent">
                             W. D. R. Samarakoon Logistic Pvt. Colombo, Sri Lanka.
                             <span id="highlighted_date">September 2017 to January 2019</span>
                         </p>
                         <br>
-                        <br>
-                        <h3>SENIOR SOFTWARE ENGINEER/ SOFTWARE ENGINEER</h3>
+                        <h3>Senior Software Engineer | Software Engineer</h3>
                         <p id="parent">
                             Aepona Software Pvt Limited, Persistent Systems (IoT Services), Intel Corporation, Colombo,
                             Sri
@@ -159,27 +164,27 @@
                 <br>
                 <br>
                 <h2> <i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION</h2>
-                <h3>MASTERS OF SCIENCE, SPECIALISING IN DATA SCIENCE, – ACCREDITED BY BCS </h3>
+                <h3>Master of Science (MSc), Specializing in Data Science – Accredited by BCS</h3>
                 <p id="parent">
-                    Leeds Beckett University, Leeds, United Kingdom
+                    Leeds Beckett University, Leeds, United Kingdom.
                     <span id="highlighted_date">2022 September to 2023 September</span>
                 </p>
                 <br>
-                <h3>MASTERS OF SCIENCE SPECIALISING IN SOFTWARE ARCHITECTURE. </h3>
-                <span>(3.52/4.2 GPA) </span>
+                <h3>Master of Science (MSc), Specializing in Software Architecture </h3>
                 <p id="parent">
                     University of Moratuwa, Colombo, Sri Lanka.
                     <span id="highlighted_date">2015 to 2017</span>
                 </p>
                 <br>
-                <h3>BACHELOR OF COMPUTER SCIENCE ENGINEERING, SPECIALISING IN COMPUTER ENGINEERING.</h3>
-                <span>(3.15/4.0 GPA) </span>
+                <h3>Bachelor of the Science of Engineering (BSc) (Hons) Specializing in Computer Engineering</h3>
                 <p id="parent">
                     University of Peradeniya, Kandy, Sri Lanka.
                     <span id="highlighted_date">2008 to 2013</span>
                 </p>
             </section>
             <section id="section_skills">
+                <br>
+                <br>
                 <br>
                 <br>
                 <h2><i class="fa fa-cogs" aria-hidden="true"></i> SKILLS</h2>
