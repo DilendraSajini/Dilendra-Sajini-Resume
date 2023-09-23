@@ -95,6 +95,7 @@ h3 {
 #highlighted_date {
   color: var(--yangColor);
   text-align: end;
+  font-size: 18px;
 }
 
 #parent {
@@ -180,7 +181,7 @@ h3 {
 
 }
 
-.fab.fa-github, .fa-envelope, .fa-linkedin {
+.fab.fa-github, .fa-envelope, .fa-linkedin, .fa-home, .fa-researchgate{
   color: var(--yangColor); /* Replace with your desired color */
 }
 
