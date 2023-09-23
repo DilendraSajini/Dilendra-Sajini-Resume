@@ -1,269 +1,243 @@
 <html>
 
 <head>
-    <link href="style.css" rel="stylesheet">
+    <title>My Resume</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
     <link href="sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Your Name resume</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <header id="header">
-        <!-- resume header with your name and title -->
         <h1>DILENDRA SAJINI</h1>
-        <hr>
         <h2 id="position">
-        SOFTWARE ENGINEER (DATA CENTRIC)
-        </h2>
-        <hr>
+            <div id="address_details">
+                Barnsley, United Kingdom. +447778996009
+            </div>
+            <div class="text-wrapper">
+                <ul class="text-dynamic">
+                    <li class="text-item"><span>I'm a Software Engineer</span></li>
+                    <li class="text-item"><span> I'm a Full Stack Developer</span></li>
+                    <li class="text-item"><span>I'm a Data Scientist</span></li>
+                    <li class="text-item"><span>I'm a Data Analyst</span></li>
+                </ul>
+            </div>
+
     </header>
     <main>
         <article id="mainSide">
             <section id="navBar">
                 <div class="sidenav">
-                    <img id="photo" src="photo.jpg" alt="Girl">
+                    <img id="photo" src="photo.PNG" alt="Girl">
                     <a id="about" href="#">ABOUT</a>
                     <a href="#section_workexperience">WORK EXPERIENCE</a>
                     <a href="#section_education">EDUCATION</a>
                     <a href="#section_skills">SKILLS</a>
                     <a href="#section_languages">LANGUAGES</a>
-                  </div>
+                    <a href="SERVICE LETTERS.pdf" target="_blank">SERVICE LETTERS</a>
+                    <a href="DILENDRA WIJESINGHE.pdf" download="DILENDRA WIJESINGHE.pdf">
+                    <button class="btn">Download Resume</button>
+                    </a>
+                </div>
             </section>
         </article>
-        <article id="mainLeft">  
+        <article id="mainLeft">
             <section id="section_about">
-                <h2>ABOUT</h2>
-                <p>I’m an enthusiastic software engineer. I bring a comprehensive background in data science and software development to the table. With a primary education in Computer Engineering and a strong foundation in mathematics and statistical analysis, I possess the necessary skills to excel in the field. My unwavering passion lies in gaining industry experience and forging a successful solution architect implementing data centric software solutions. The UK's unique blend of educational, cultural, social, and technological experiences fascinates me, and I am eager to contribute my expertise in this vibrant environment.
-                    </p>
-            </section> 
+                <p>
+                    As a software engineer and data scientist with a master's level education in both fields, I possess
+                    a unique blend of skills and analytical prowess. I'm known for my systematic and lateral
+                    problem-solving abilities, making me adaptable to various challenges. My dedication to continuous
+                    learning and unwavering work ethic drive my success in collaborative environments. I specialize in
+                    solution architectures and data-centric software solutions. I'm fascinated by the UK's diverse
+                    experiences and eager to contribute my expertise to this vibrant environment. I excel in dynamic
+                    work settings, prioritize attention to detail and quality, and am committed to ongoing growth,
+                    making me a versatile professional in software engineering and data science.
+                </p>
+            </section>
             <section id="section_contacts">
                 <h2>CONTACT</h2>
                 <div id="contact_details">
-                <p id="email">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:dilendra.sajini@gmail.com"><div id="highlighted">dilendra.sajini@gmail.com</div></a>
-                </p>
-                <p id="github">
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                    <a href="https://github.dev/DilendraSajini"><div id="highlighted">DilendraSajini</div></a>
-                </p>
-                <p id="linkedln">
-                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                    <a href="https://www.linkedin.com/in/dilendra-sajini/"><div id="highlighted">dilendra-sajini</div></a>
-                </p>
-            </div>
-                </section>
+                    <p id="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:dilendra.sajini@gmail.com">
+                            <div id="highlighted">dilendra.sajini@gmail.com</div>
+                        </a>
+                    </p>
+                    <p id="github">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <a href="https://github.dev/DilendraSajini">
+                            <div id="highlighted">DilendraSajini</div>
+                        </a>
+                    </p>
+                    <p id="linkedln">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <a href="https://www.linkedin.com/in/dilendra-sajini/">
+                            <div id="highlighted">dilendra-sajini</div>
+                        </a>
+                    </p>
+                </div>
             </section>
-            <section id="section_workexperience">
-                <h2>WORK EXPERIENCE</h2>
-                <h3>SENIOR SOFTWARE ENGINEER</h3>
-                <p>
-                    Cambio Software Engineering, Colombo, Sri Lanka. | <div id="highlighted">October 2019 to September 2022 </div>
-                </p>
-                <p>
-                </p>
-                <ul>
-                    <li> Spearheaded refactoring of existing legacy codebases (Cambio CDS and Cambio COSMIC),
-                        incorporating
-                        new features, and ensuring adherence to best practices.
-                    </li>
-                    <li>Led, mentored, and supervised a team of six people, achieving timely delivery of web overviews
-                        in a
-                        four-month period.
-                    </li>
-                    <li> Analysed requirements, designed, implemented, performed unit and integration tests, and
-                        conducted
-                        code reviews, identifying timeline risks, dependency impacts, and potential edge cases. Directed
-                        and
-                        mentored the team to ensure backward compatibility, clean architecture, and optimal utilization
-                        of
-                        design patterns.
-                    </li>
-                    <li> Facilitated effective communication with dependent module teams, stakeholders, and customers,
-                        incorporating potential test cases and customer scenarios in the project plan. Collaborated with
-                        the
-                        team to ensure high-quality project completion through meticulous planning and continual
-                        monitoring.
-                    </li>
-                </ul>
-                <h3>SENIOR SOFTWARE ENGINEER</h3>
-                <p>
-                    Pearson Lanka (Pvt) Ltd., Colombo, Sri Lanka. | <div id="highlighted">January 2019 to October 2019</div>
-                </p>
-                <p>
-                </p>
-                <ul>
-                    <li>Modernized the software architecture (Custom Book Building) by reorganizing legacy backend
-                        components into micro services and implementing a message-driven architecture for asynchronous
-                        services, resulting in improved scalability, maintainability, and system performance. Decreased
-                        release effort by 50%.
-                    </li>
-                    <li>Drove the implementation of React SPAs to replace legacy portals, resulting in a 50% improvement
-                        in
-                        maintainability and user experience, along with reduced technical debt and simplified
-                        deployment.
-                    </li>
-                    <li>Achieved a 30% reduction in release effort and expedited delivery of new features to users by
-                        implementing reusable capabilities as services.
-                    </li>
-                    <li> Cultivated a collaborative and communicative team environment by actively participating in
-                        meetings
-                        and leading discussions during iteration planning, sprint planning, and backlog grooming
-                        sessions.
-                        Improved task effort estimation and ensured successful project delivery within time and budget.
-                    </li>
-                </ul>
-                <h3>SENIOR SOFTWARE ENGINEER</h3>
-                <p>
-                    W. D. R. Samarakoon Logistic Pvt. Colombo, Sri Lanka. | <div id="highlighted">September 2017 to January 2019</div>
-                </p>
-                <p>
+            <br>
+            <section>
+                <h2>EXPERTIES</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div>
+                    <section id="section_workexperience">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h2><i class="fa fa-briefcase" aria-hidden="true"></i> WORK EXPERIENCE</h2>
+                        <h3>SENIOR SOFTWARE ENGINEER</h3>
+                        <p id="parent">
+                            Cambio Software Engineering, Colombo, Sri Lanka.
+                            <span id="highlighted_date">October 2019 to September 2022 </span>
+                            <iframe id="pdfViewer" style="display: none;"></iframe>
+                        </p>
+                        <br>
+                        <br>
+                        <h3>SENIOR SOFTWARE ENGINEER</h3>
+                        <p id="parent">
+                            Pearson Lanka (Pvt) Ltd., Colombo, Sri Lanka.
+                            <span id="highlighted_date">January 2019 to October 2019</span>
+                        </p>
+                        </ul>
+                        <br>
+                        <br>
+                        <h3>SENIOR SOFTWARE ENGINEER</h3>
+                        <p id="parent">
+                            W. D. R. Samarakoon Logistic Pvt. Colombo, Sri Lanka.
+                            <span id="highlighted_date">September 2017 to January 2019</span>
+                        </p>
+                        <br>
+                        <br>
+                        <h3>SENIOR SOFTWARE ENGINEER/ SOFTWARE ENGINEER</h3>
+                        <p id="parent">
+                            Aepona Software Pvt Limited, Persistent Systems (IoT Services), Intel Corporation, Colombo,
+                            Sri
+                            Lanka.
+                            <span id="highlighted_date">2013 to September 2017</span>
+                </div>
                 </p>
-                <ul>
-                    <li>Restructured the legacy system (Truck connecting system) with a monolithic design, overcoming
-                        limitations in scalability, availability, reliability, and fault tolerance.
-                    </li>
-                    <li>Evaluated and redesigned the legacy system using micro services, enhancing the software design
-                        while preserving independent deployability and developability. Reduced limitations of the legacy
-                        codebase by 40%.
-                    </li>
-                    <li> Mentored the team, provided technical guidance, and led the development team to ensure
-                        adherence
-                        to optimal design and implementation standards. Managed and prioritized sprint work to achieve
-                        project goals.
-                    </li>
-                </ul>
-                <h3>SENIOR SOFTWARE ENGINEER/ SOFTWARE ENGINEER</h3>
-                <p>
-                    Aepona Software Pvt Limited, Persistent Systems (IoT Services), Intel Corporation, Colombo, Sri
-                    Lanka. | 2013 to September 2017</div>
-                </p>
-                <p>
-                </p>
-                <ul>
-                    <li>ed the initiatives to develop an IoT dashboard for monitoring smart home appliances and
-                        rule-based alert systems for firmware and software upgrades, resulting in a 20% improvement in
-                        efficiency. Conducted successful proof-of-concept project demos to showcase the product's
-                        potential.
-                    </li>
-                    <li>Integrated Mobile Connect identity service into the core ASE product, adhering to Open ID
-                        Connect, OAuth2 standards, and JWT token-based authorization. Strengthened the product's
-                        security, efficiency, and user-friendliness.
-                    </li>
-                    <li>Finalized upfront requirements by implementing a simulator and creating technical documentation
-                        for the ASE OpenStack gateway. Facilitated a clear understanding of project requirements and
-                        achieved a 15% reduction in development time.
-                    </li>
-                </ul>
             </section>
             <section id="section_education">
-                <h2>EDUCATION</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2> <i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION</h2>
                 <h3>MASTERS OF SCIENCE, SPECIALISING IN DATA SCIENCE, – ACCREDITED BY BCS </h3>
-                <p>
-                    Leeds Beckett University, Leeds, United Kingdom | <div id="highlighted">2022 September to present</div>
+                <p id="parent">
+                    Leeds Beckett University, Leeds, United Kingdom
+                    <span id="highlighted_date">2022 September to 2023 September</span>
                 </p>
-                Research led course with core modules including Data Analytics and Visualisation, Database Systems and
-                Approaches, Research Practice, Project Management, Data Warehouse Models and Approaches (DWMA),
-                Intelligent Systems and Machine Learning, and Dissertation.
-                <p>
+                <br>
+                <h3>MASTERS OF SCIENCE SPECIALISING IN SOFTWARE ARCHITECTURE. </h3>
+                <span>(3.52/4.2 GPA) </span>
+                <p id="parent">
+                    University of Moratuwa, Colombo, Sri Lanka.
+                    <span id="highlighted_date">2015 to 2017</span>
                 </p>
-                <ul>
-                    <li>
-                        Engineered comprehensive databases using Oracle Apex DBMS, applying techniques such as
-                        Conceptual
-                        Design, Logical Design, Physical Design, Normalization, and CASE tools to ensure data integrity,
-                        security, and adherence to industry best practices and standards.
-                    </li>
-                    <li>
-                        Employed RapidMiner software to analyse pricing data from Uber and Lyft, uncovering factors
-                        influencing demand and determining the optimal model for price prediction through the
-                        application of
-                        linear regression and MLP models.
-                    </li>
-                    <li>
-                        Delivered a university case study by developing an ethical decision support system, utilizing
-                        Kimball's bottom-up approach, implementing a datamart and dimensional model, and designing
-                        intuitive
-                        dashboards using Access and Excel pivot charts, fostering informed decision-making.
-                    </li>
-                    <li>
-                        Collaborated on a university case study project evaluating UK government investment in road
-                        safety
-                        from 1999 to 2021, employing Python, data virtualization, and Excel reporting to implement
-                        machine
-                        learning models for assessing degrees of road fatality risk based on road user, gender, area,
-                        and
-                        road type, ultimately pinpointing car occupants as the most vulnerable road users and car
-                        drivers as
-                        the most vulnerable driver group.
-                    </li>
-                    <li>
-                        Led the development of a use case for constructing a smart hospital, harnessing natural language
-                        processing through IBM Watson Conversation and Alexa voice services, and enhancing the system's
-                        accuracy and effectiveness by iteratively training the natural language classifier based on user
-                        feedback.
-                    </li>
-                </ul>
-                <h3>MASTERS OF SCIENCE SPECIALISING IN SOFTWARE ARCHITECTURE.  </h3><span>(3.52/4.2 GPA) </span>
-                <p>
-                    University of Moratuwa, Colombo, Sri Lanka. | <div id="highlighted">2015 to 2017</div>
-                </p>
-                <p>
-                </p>
-                <h3>BACHELOR OF COMPUTER SCIENCE ENGINEERING, SPECIALISING IN COMPUTER ENGINEERING.</h3> <span>(3.15/4.0 GPA) </span>
-                <p>
-                    University of Peradeniya, Kandy, Sri Lanka. | <div id="highlighted">2008 to 2013</div>
-                </p>
-                <p>
+                <br>
+                <h3>BACHELOR OF COMPUTER SCIENCE ENGINEERING, SPECIALISING IN COMPUTER ENGINEERING.</h3>
+                <span>(3.15/4.0 GPA) </span>
+                <p id="parent">
+                    University of Peradeniya, Kandy, Sri Lanka.
+                    <span id="highlighted_date">2008 to 2013</span>
                 </p>
             </section>
             <section id="section_skills">
-                <h2>SKILLS</h2>
-                <ul>
-                    <li> Java/Spring, Spring Boot, Java Swing (6 years)
-                    </li>
-                    <li>
-                        Angular (NgRx) (3 years)
-                    </li>
-                    <li>Python, Google Colab, Excel
-                    </li>
-                    <li>React (Redux)/Node js (Express.js) (3 years)
-                    </li>
-                    <li>Web pack/SonarLint/ Eslint
-                    </li>
-                    <li>AWS/IBM
-                    </li>
-                    <li>Apache JBOSS/Tomcat
-                    </li>
-                    <li>YourKit/JProfiler
-                    </li>
-                    <li>HTML/CSS/JavaScript/TypeScript
-                    </li>
-                    <li>PubNub/MQTT/ Active MQ
-                    </li>
-                    <li>SQL, Hibernate (6 years), MongoDB/Cassandra/Redis/Oracle
-                    </li>
-                    <li>Rest, Json, Swagger
-                    </li>
-                    <li>OSGI/Apache
-                    </li>
-                    <li>Karaf/Fabric/JBoss Fuse
-                    </li>
-                    <li>Docker/Kubernetes
-                    </li>
-                    <li>Apache Maven/ Gradle
-                    </li>
-                    <li>Jira/Bitbucket/Jenkins
-                    </li>
-                    <li>Swagger/JWT/Oauth
-                    </li>
-                    <li>Zuul API Gateway/NGINX
-                    </li>
-                    <li>Rapid Miner
+                <br>
+                <br>
+                <h2><i class="fa fa-cogs" aria-hidden="true"></i> SKILLS</h2>
+                <ul id="skills_ul">
+
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Angular (NgRx)</li>
+                    <li>React (Redux)</li>
+                    <li>PubNub</li>
+                    <li>MQTT</li>
+                    <li>AWS</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Zuul API Gateway</li>
+                    <li>NGINX</li>
+                    <li>Agile</li>
+                    <li>Linux</li>
+                    <li>Java Swing</li>
+                    <li>Swagger</li>
+                    <li>Agile</li>
+                    <li>NoSQL</li>
+                    <li>Linux</li>
+                    <li>Webpack</li>
+                    <li>SonarLint</li>
+                    <li>Eslint</li>
+                    <li>Apache JBOSS</li>
+                    <li>YourKit</li>
+                    <li>JProfiler</li>
+                    <li>TypeScript</li>
+                    <li>SQL</li>
+                    <li>Hibernate</li>
+                    <li>Apache Maven</li>
+                    <li>Gradle</li>
+                    <li>Swagger</li>
+                    <li>Python</li>
+                    <li>Google Colab</li>
+                    <li>Excel</li>
+                    <li>Oracle</li>
+                    <li>Erwin data modeler</li>
+                    <li>Rapid Miner</li>
+                    <li>Oracle Apex</li>
+                    <li>ETL Scripting</li>
+                    <li>Django</li>
+                    <li>Flask</li>
+                    <li>PRINCE2</li>
+                </ul>
             </section>
             <section id="section_languages">
-                <h2>LANGUAGES</h2>
+                <br>
+                <br>
+                <h2><i class="fa fa-language" aria-hidden="true"></i> LANGUAGES</h2>
                 <p>English : IELTS CEFR Level B2 </p>
             </section>
         </article>
