@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link href="sidebar.css" rel="stylesheet">
-    <link href="card.css" rel="stylesheet">
+    <link rel="stylesheet" href="mobile_style.css" media="screen and (max-width: 576px)" />
+    <link rel="stylesheet" href="desktop_style.css" media="screen and (min-width: 900px)" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -20,43 +22,69 @@
 </head>
 
 <body>
-    <header id="header">
-        <h1>DILENDRA SAJINI</h1>
-        <h2 id="position">
-            <div id="address_details">
-                Barnsley, United Kingdom. +447778996009
-            </div>
-            <div class="text-wrapper">
-                <ul class="text-dynamic">
-                    <li class="text-item"><span>I'm a Software Engineer</span></li>
-                    <li class="text-item"><span> I'm a Full Stack Developer</span></li>
-                    <li class="text-item"><span>I'm a Data Scientist</span></li>
-                    <li class="text-item"><span>I'm a Data Analyst</span></li>
-                </ul>
-            </div>
-
+    <header>
+        <h1 id="name">DILENDRA SAJINI</h1>
+        <div id="address_details">
+            Barnsley, United Kingdom. +447778996009
+        </div>
     </header>
-    <main>
-        <article id="mainSide">
+    <main id="mainBody">
+        <article id="maskSide">
+            <article id="mainSide">
+            <br>
+            <section id="picture">
+                <img id="photo" src="photo.PNG">
+            </section>
             <section id="navBar">
-                <div class="sidenav">
-                    <img id="photo" src="photo.PNG" alt="Girl">
-                    <a id="about" href="#">ABOUT</a>
-                    <a href="#section_workexperience">WORK EXPERIENCE</a>
-                    <a href="#section_education">EDUCATION</a>
-                    <a href="#section_projects">PROJECTS</a>
-                    <a href="#section_volunteer">VOLUNTEER</a>
-                    <a href="#section_skills">SKILLS</a>
-                    <a href="#section_languages">LANGUAGES</a>
-                    <a href="docs/assets/SERVICE LETTERS.pdf" target="_blank">SERVICE LETTERS</a>
-                    <a href="docs/assets/DILENDRA WIJESINGHE.pdf" download="DILENDRA WIJESINGHE.pdf">
-                        <button class="btn">Download Resume</button>
-                    </a>
-                </div>
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a href="#sectionWorkexperience">WORK EXPERIENCE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sectionEducation">EDUCATION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sectionProjects">PROJECTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sectionVolunteer">VOLUNTEER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sectionSkills">SKILLS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sectionLanguages">LANGUAGES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="docs/assets/SERVICE LETTERS.pdf" target="_blank">SERVICE LETTERS</a>
+                            </li>
+                            <br>
+                            <li class="nav-item">
+                                <a href="docs/assets/DILENDRA WIJESINGHE.pdf" download="DILENDRA WIJESINGHE.pdf">
+                                    <button class="btn">Download Resume</button>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
             </section>
         </article>
+    </article>
         <article id="mainLeft">
-            <section id="section_about">
+            <section id="animation">
+                <div class="text-wrapper">
+                    <ul class="text-dynamic">
+                        <li class="text-item"><span>I'm a Software Engineer</span></li>
+                        <li class="text-item"><span> I'm a Full Stack Developer</span></li>
+                        <li class="text-item"><span>I'm a Data Scientist</span></li>
+                        <li class="text-item"><span>I'm a Data Analyst</span></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="sectionAbout">
                 <p>
                     As a software engineer and data scientist with a master's level education in both fields, I possess
                     a unique blend of skills and analytical prowess. I'm known for my systematic and lateral
@@ -68,8 +96,12 @@
                     making me a versatile professional in software engineering and data science.
                 </p>
             </section>
-            <section id="section_contacts">
-                <div id="contact_details">
+            <section id="sectionContacts">
+                <br>
+                <br>
+                <h2><i class="fas fa-address-book" aria-hidden="true"></i> CONTACTS</h2>
+                <br>
+                <div id="contactDetails">
                     <p id="email">
                         <a href="mailto:dilendra.sajini@gmail.com">
                             <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
@@ -88,15 +120,18 @@
                 </div>
             </section>
             <br>
-            <section>
-                <h2>EXPERTIES</h2>
-                <div class="container panel_background">
-                    <div class="row panel_background">
-                        <div class="col-sm-4 card_column">
+            <section id="experties">
+                <br>
+                <br>
+                <h2><i class="fa fa-cogs" aria-hidden="true"></i> EXPERTIES</h2>
+                <br>
+                <div class="container">
+                    <div class="row panel">
+                        <div class="col-sm-4 cardColumn">
                             <div class="card">
-                                <div class="card-body rounded card_background">
-                                    <h5 class="card-title" id="experties_header"> <b> Back End Development </b></h5>
-                                    <p class="card-text" id="experties_body">With 6 years of experience in <b>Java
+                                <div class="card-body rounded cardBackground">
+                                    <h5 class="card-title" id="expertiesHeader"> <b> Back End Development </b></h5>
+                                    <p class="card-text" id="expertiesBody">With 6 years of experience in <b>Java
                                             back-end development</b>, specializing in the <b>Spring framework</b> and
                                         <b>Java 8</b>, I have actively contributed to healthcare information systems,
                                         cloud-based learning platforms, and telecommunications projects. My expertise
@@ -127,11 +162,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 card_column">
+                        <div class="col-sm-4 cardColumn">
                             <div class="card">
-                                <div class="card-body rounded card_background">
-                                    <h5 class="card-title" id="experties_header"> <b> Front End Development </b> </h5>
-                                    <p class="card-text" id="experties_body">With three years of expertise in front-end
+                                <div class="card-body rounded cardBackground">
+                                    <h5 class="card-title" id="expertiesHeader"> <b> Front End Development </b> </h5>
+                                    <p class="card-text" id="expertiesBody">With three years of expertise in front-end
                                         development including SPA using <b>Angular</b> with <b>NgRx</b> and <b>React</b>
                                         with <b>Redux</b> frameworks, I bring extensive experience from various domains,
                                         including healthcare information systems, cloud-based learning platforms, and
@@ -157,12 +192,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 card_column">
+                        <div class="col-sm-4 cardColumn">
                             <div class="card">
-                                <div class="card-body rounded card_background">
-                                    <h5 class="card-title" id="experties_header"> <b> Machine Learning and Data
+                                <div class="card-body rounded cardBackground">
+                                    <h5 class="card-title" id="expertiesHeader"> <b> Machine Learning and Data
                                             Visualization </b> </h5>
-                                    <p class="card-text" id="experties_body">With a strong focus on <b>Machine
+                                    <p class="card-text" id="expertiesBody">With a strong focus on <b>Machine
                                             Learning</b> and <b>Data Visualization</b>, I have a proven track record of
                                         significantly improving the accuracy and efficiency of breast cancer
                                         classification in high-resolution histology images. My approach involves
@@ -194,127 +229,131 @@
                         </div>
                     </div>
                 </div>
-
+            </section>
+            <section id="sectionWorkexperience">
+                <br>
+                <br>
+                <h2><i class="fa fa-briefcase" aria-hidden="true"></i> WORK EXPERIENCE</h2>
+                <br>
                 <div>
-                    <section id="section_workexperience">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <h2><i class="fa fa-briefcase" aria-hidden="true"></i> WORK EXPERIENCE</h2>
-                        <h3>Associate Technical Lead</h3>
-                        <p id="parent">
-                            Cambio Software Engineering, Colombo, Sri Lanka.
-                            <span id="highlighted_date">October 2019 to September 2022 </span>
-                            <iframe id="pdfViewer" style="display: none;"></iframe>
-                        </p>
-                        <br>
-                        <h3>Senior Software Engineer</h3>
-                        <p id="parent">
-                            Pearson Lanka (Pvt) Ltd., Colombo, Sri Lanka.
-                            <span id="highlighted_date">January 2019 to October 2019</span>
-                        </p>
-                        </ul>
-                        <br>
-                        <h3>Associate Technical Lead</h3>
-                        <p id="parent">
-                            W. D. R. Samarakoon Logistic Pvt. Colombo, Sri Lanka.
-                            <span id="highlighted_date">September 2017 to January 2019</span>
-                        </p>
-                        <br>
-                        <h3>Senior Software Engineer | Software Engineer</h3>
-                        <p id="parent">
-                            Aepona Software Pvt Limited, Persistent Systems (IoT Services), Intel Corporation, Colombo,
-                            Sri
-                            Lanka.
-                            <span id="highlighted_date">2013 to September 2017</span>
+                    <h3>Associate Technical Lead</h3>
+                    <p id="parent">
+                        Cambio Software Engineering, Colombo, Sri Lanka.
+                        <span id="highlightedDate">October 2019 to September 2022 </span>
+                        <iframe id="pdfViewer" style="display: none;"></iframe>
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Senior Software Engineer</h3>
+                    <p id="parent">
+                        Pearson Lanka (Pvt) Ltd., Colombo, Sri Lanka.
+                        <span id="highlightedDate">January 2019 to October 2019</span>
+                    </p>
+                    </ul>
+                    <br>
+                    <br>
+                    <h3>Associate Technical Lead</h3>
+                    <p id="parent">
+                        W. D. R. Samarakoon Logistic Pvt. Colombo, Sri Lanka.
+                        <span id="highlightedDate">September 2017 to January 2019</span>
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Senior Software Engineer | Software Engineer</h3>
+                    <p id="parent">
+                        Aepona Software Pvt Limited, Persistent Systems (IoT Services), Intel Corporation, Colombo,
+                        Sri
+                        Lanka.
+                        <span id="highlightedDate">2013 to September 2017</span>
+                    </p>
                 </div>
-                </p>
             </section>
-            <section id="section_education">
+            <section id="sectionEducation">
                 <br>
                 <br>
+                <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION</h2>
                 <br>
-                <br>
-                <h2> <i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION</h2>
-                <h3>Master of Science (MSc), Specializing in Data Science – Accredited by BCS</h3>
-                <p id="parent">
-                    Leeds Beckett University, Leeds, United Kingdom.
-                    <span id="highlighted_date">2022 September to 2023 September</span>
-                </p>
-                <br>
-                <h3>Master of Science (MSc), Specializing in Software Architecture </h3>
-                <p id="parent">
-                    University of Moratuwa, Colombo, Sri Lanka.
-                    <span id="highlighted_date">2015 to 2017</span>
-                </p>
-                <br>
-                <h3>Bachelor of the Science of Engineering (BSc) (Hons) Specializing in Computer Engineering</h3>
-                <p id="parent">
-                    University of Peradeniya, Kandy, Sri Lanka.
-                    <span id="highlighted_date">2008 to 2013</span>
-                </p>
+                <div>
+                    <h3>Master of Science (MSc), Specializing in Data Science – Accredited by BCS</h3>
+                    <p id="parent">
+                        Leeds Beckett University, Leeds, United Kingdom.
+                        <span id="highlightedDate">2022 September to 2023 September</span>
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Master of Science (MSc), Specializing in Software Architecture </h3>
+                    <p id="parent">
+                        University of Moratuwa, Colombo, Sri Lanka.
+                        <span id="highlightedDate">2015 to 2017</span>
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Bachelor of the Science of Engineering (BSc) (Hons) Specializing in Computer Engineering</h3>
+                    <p id="parent">
+                        University of Peradeniya, Kandy, Sri Lanka.
+                        <span id="highlightedDate">2008 to 2013</span>
+                    </p>
+                    <div>
             </section>
-            <section id="section_projects">
-                <br>
-                <br>
+            <section id="sectionProjects">
                 <br>
                 <br>
                 <h2><i class="fas fa-award" aria-hidden="true"></i> University Projects</h2>
-                <h3 id="parent">Leveraging deep learning and medical image analysis for enhanced cancer diagnosis
-                    <a href="https://dissertation-zejrc29dctwmetafszbaaw.streamlit.app/">
+                <br>
+                <div>
+                    <a href="https://dissertation-zejrc29dctwmetafszbaaw.streamlit.app/" id="reference">
                         <i class="fa fa-home" aria-hidden="true"></i>
                     </a>
-                    <span id="highlighted_date">2023</span>
-                </h3>
-                <p>
-                    Enhance the accuracy and efficiency of breast cancer classification in high-resolution histology
-                    images through the utilisation of patch-based image analysis, incorporating VGG16 transfer learning
-                    and LSTM sequential data processing model while preserving global context for structures and
-                    features.
-                </p>
-                <br>
-                <h3 id="parent">Generic IoT terminal for program a SOC
-                    <a href="https://www.researchgate.net/publication/369170852_Generic_IoT_Terminal_For_Program_A_SOC">
+                    <h3 id="parent">Leveraging deep learning and medical image analysis for enhanced cancer diagnosis
+                        <span id="highlightedDate">2023</span>
+                    </h3>
+                    <p>
+                        Enhance the accuracy and efficiency of breast cancer classification in high-resolution histology
+                        images through the utilisation of patch-based image analysis, incorporating VGG16 transfer learning
+                        and LSTM sequential data processing model while preserving global context for structures and
+                        features.
+                    </p>
+                    <br>
+                    <a href="https://www.researchgate.net/publication/369170852_Generic_IoT_Terminal_For_Program_A_SOC" id="reference">
                         <i class="fab fa-researchgate" aria-hidden="true"></i>
                     </a>
-                    <span id="highlighted_date">2017</span>
-                </h3>
-                <p>
-                    A user-friendly remote programmable GUI environment for smart homeowners, featuring a cost-effective
-                    and energy-efficient design that received the 2017 National Best Quality ICT Awards.
-                </p>
-                <br>
-                <h3 id="parent">Web-based content-based image retrieval system
-                    <a href="https://www.researchgate.net/publication/369170939_A_Web-Based_Content-Based_Image_Retrieval_System">
+                    <h3 id="parent">Generic IoT terminal for program a SOC
+                        <span id="highlightedDate">2017</span>
+                    </h3>
+                    <p>
+                        A user-friendly remote programmable GUI environment for smart homeowners, featuring a cost-effective
+                        and energy-efficient design that received the 2017 National Best Quality ICT Awards.
+                    </p>
+                    <br>
+                    <a href="https://www.researchgate.net/publication/369170939_A_Web-Based_Content-Based_Image_Retrieval_System" id="reference">
                         <i class="fab fa-researchgate" aria-hidden="true"></i>
                     </a>
-                    <span id="highlighted_date">2013</span>
-                </h3>
-                <p>
-                    A Content-Based Image Retrieval (CBIR) system, aiming to overcome the limitations of keyword-based
-                    image retrieval by addressing semantic gaps, utilising clustering techniques to enhance efficiency
-                    and accuracy.
-                </p>
+                    <h3 id="parent">Web-based content-based image retrieval system
+                        <span id="highlightedDate">2013</span>
+                    </h3>
+                    <p>
+                        A Content-Based Image Retrieval (CBIR) system, aiming to overcome the limitations of keyword-based
+                        image retrieval by addressing semantic gaps, utilising clustering techniques to enhance efficiency
+                        and accuracy.
+                    </p>
+                </div>
             </section>
-            <section id="section_volunteer">
-                <br>
-                <br>
+            <section id="sectionVolunteer">
                 <br>
                 <br>
                 <h2><i class="fas fa-heart" aria-hidden="true"></i> Volunteer and Professional Development</h2>
+                <br>
+                <div>
                 <p>Volunteer for Barnsley Hospital NHS Foundation Trust.</p> 
                 <p>Following STEMAspire female mentorship program for 9 months. </p> 
-                <p></p>Volunteer as a course representative for 1 year in Masters of Data Science at Leeds Beckett University. </p> 
+                <p>Volunteer as a course representative for 1 year in Masters of Data Science at Leeds Beckett University. </p> 
+                </div>
             </section>
-            <section id="section_skills">
-                <br>
-                <br>
+            <section id="sectionSkills">
                 <br>
                 <br>
                 <h2><i class="fa fa-cogs" aria-hidden="true"></i> SKILLS</h2>
-                <ul id="skills_ul">
-
+                <ul id="skillsUl">
                     <li>Java</li>
                     <li>Spring Boot</li>
                     <li>Angular (NgRx)</li>
@@ -364,7 +403,7 @@
                     <li>PRINCE2</li>
                 </ul>
             </section>
-            <section id="section_languages">
+            <section id="sectionLanguages">
                 <br>
                 <br>
                 <h2><i class="fa fa-language" aria-hidden="true"></i> LANGUAGES</h2>
