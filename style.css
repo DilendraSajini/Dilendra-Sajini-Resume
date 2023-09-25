@@ -97,7 +97,8 @@ h1 {
 .fa-graduation-cap,
 .fa-briefcase,
 .fa-language,
-.fa-address-book {
+.fa-address-book,
+.fa-heart {
   color: var(--yangColor);
   /* Replace with your desired color */
 }
