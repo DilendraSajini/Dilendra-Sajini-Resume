@@ -1,9 +1,24 @@
+#leftHeader {
+    width: 20%;
+}
+
+#rigtHeader {
+    width: 80%;
+}
+
+#header {
+    display: flex;
+}
+
 #address_details {
-    padding-left: 20%;
+    padding-top: 8%;
+    width: 100%;
 }
 
 #name {
-    padding-left: 20%;
+    width: 80%;
+    padding-right: 16%;
+    background-color: #111;
 }
 
 #mainBody {
@@ -11,7 +26,7 @@
 }
 
 #mainSide {
-    width: 20%;
+    width: 18%;
     position: fixed;
     z-index: 1;
 }
@@ -20,11 +35,15 @@
     width: 20%;
 }
 
-.navbar{
+.navbar {
     width: 80%;
     padding-left: 15%;
     padding-right: 0%;
-  }
+}
+
+.navbar .navbar-dark .bg-dark {
+    z-index: 0 !important;
+}
 
 #mainLeft {
     width: 80%;
@@ -63,5 +82,5 @@ h3 {
 }
 
 .text-wrapper {
-    font-size: 23px; 
+    font-size: 23px;
 }
