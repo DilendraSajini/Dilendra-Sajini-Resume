@@ -169,3 +169,8 @@ h1 {
     left: 0;
   }
 }
+
+#photo {
+  max-width: 60%;
+  height: auto;
+}
