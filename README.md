@@ -2,7 +2,7 @@
 Welcome to my web resume, a personal project to showcase my skills and experience. 
 ## Usage
 You can view my web resume by visiting the following URL:
-(https://dilendrasajini.github.io/my-resume/)
+[https://dilendrasajini.github.io/my-resume/](https://dilendrasajini.github.io/my-resume/)
 Explore the sections, learn about my background, work experience, and skills.
 ## Technologies Used
 This project was built using the following technologies:
