@@ -1,51 +1,61 @@
 :root {
   --yangColor: #f59d62;
   --yinColor: #111111;
+  --graycolor: #818181;
 }
 
 body {
-  background-color: #111;
-  text-align: justify;
+  background-color: var(--yinColor);
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
-  color: #818181;
-  font-family: 'Muli', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--graycolor);
+  font-family: 'Muli', Tahoma;
+  padding:0;
 }
-
-#name {
-  width: 80%;
-  background-color: #111;
+#about{
+  text-align: justify;
+  width: 100%;
+  padding:0;
 }
 
 #rigtHeader {
+  position: fixed;
+  z-index: 1;
+  background-color: var(--yinColor);
+  justify-content: center;
+  width: 100%;
+}
+
+#mainBody{
+  width:100%
+}
+
+#maskHeader {
+  height: 130px;
+  top: 0;
+  width: 100%;
+}
+
+#photo {
+  border-radius: 40%;
+  width: 55%;
+  height: auto;
+}
+
+#photo-row {
+  justify-content: center;
+  padding-right:0;
+}
+
+#navBar{
   text-align: center;
-  display: flex;
 }
 
-#mainSide {
-  text-align: center;
-  align-items: center;
-}
-
-#maskSide {
-  text-align: center;
-  align-items: center;
-}
-
-.navbar {
-  background-color: #111 !important;
-}
-
-.btn {
+#download-resume {
   border: 2px solid var(--yangColor);
   color: var(--yangColor);
   padding: .5em;
-}
-
-#contactDetails {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 h1,
@@ -54,38 +64,6 @@ h3 {
   margin-bottom: 0;
   color: #fff;
 }
-
-h2,
-h3 {
-  text-align: left;
-}
-
-h1 {
-  position: fixed;
-  z-index: 1;
-}
-
-.cardBackground {
-  background-color: #111111;
-}
-
-.panel {
-  background-color: #111111;
-}
-
-.cardColumn {
-  background-color: #111111;
-}
-
-#expertiesHeader {
-  text-align: center;
-  color: #fff;
-}
-
-#expertiesBody {
-  text-align: left;
-}
-
 
 .fab.fa-github,
 .fa-envelope,
@@ -100,27 +78,16 @@ h1 {
 .fa-address-book,
 .fa-heart {
   color: var(--yangColor);
-  /* Replace with your desired color */
 }
 
-#reference {
-  display: inline-flex;
+#mainleft{
+  margin: 3%;
+  width: 100%;
+  padding:0%;
 }
 
-#parent {
-  display: inline;
-}
-
-#highlightedDate {
-  display: inline;
-  float: right;
-  color: var(--yangColor);
-}
-
-.text-wrapper {
-  display: flex;
-  font-weight: 400;
-  justify-content: center;
+.card {
+  width: 100%;
 }
 
 .text-dynamic {
@@ -152,6 +119,7 @@ h1 {
   animation: typing 3s steps(6) infinite;
 }
 
+
 @keyframes slide {
   100% {
     top: -120px;
@@ -170,7 +138,51 @@ h1 {
   }
 }
 
-#photo {
-  max-width: 60%;
-  height: auto;
+#iam-title{
+  margin:0;
+  justify-content: center;
+  color: var(--yangColor);
+ }
+
+#dynamic-text{
+ margin:0;
+ justify-content: center;
 }
+
+#highlightedDate {
+  color: var(--yangColor);
+  text-align: right;
+}
+
+#experties, #projects, #contacts, #work-experience, #volunteer, #education, #skills, #education{
+  width:100%;
+  margin:0;
+  padding-right:0;
+  justify-content: center;
+
+}
+
+a {
+  color:  #fff;
+}
+
+.btn-link{
+  color: var(--yangColor);
+}
+
+
+#contacts{
+  align:"center"
+}
+
+#card-header{
+  text-align:center;
+  background-color: black;
+}
+
+#card-body{
+  text-align:center;
+  background-color: var(--graycolor);
+  color: white;
+}
+

@@ -2,12 +2,6 @@ body {
     font-size: 15px;
 }
 
-#photo {
-    width: 4cap;
-    height: 20%;
-    border-radius: 40%;
-}
-
 h1 {
     font-size: 30px;
 }
@@ -20,20 +14,6 @@ h3 {
     font-size: 15px;
 }
 
-#address_details {
-    padding-top: 12%;
-    width: 100%;
-}
-
-#skillsUl {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px;
-}
-
-#skillsUl li {
-    width: 25%;
-    box-sizing: border-box;
-    padding: 0px;
+h4 {
+    font-size: 15px;
 }
