@@ -20,11 +20,11 @@ body {
 }
 
 #rigtHeader {
-  position: fixed;
+  position: sticky;
+  top:0;
   z-index: 1;
   background-color: var(--yinColor);
   justify-content: center;
-  width: 100%;
 }
 
 #mainBody{
@@ -109,32 +109,9 @@ h3 {
   align-items: center;
 }
 
-.text-item::after {
-  position: absolute;
-  content: '';
-  left: 0;
-  width: calc(100% + 30px);
-  border-left: 3px solid var(--yangColor);
-  background-color: var(--yinColor);
-  animation: typing 3s steps(6) infinite;
-}
-
-
 @keyframes slide {
   100% {
     top: -120px;
-  }
-}
-
-@keyframes typing {
-
-  40%,
-  60% {
-    left: 100%;
-  }
-
-  100% {
-    left: 0;
   }
 }
 
